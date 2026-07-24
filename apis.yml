@@ -1,8 +1,26 @@
 aid: cleanly
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/cleanly.png
 name: Cleanly
-description: Cleanly is a company surfaced as a portfolio company of 500-global, y-combinator and added
-  to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+description: Cleanly was a US-based on-demand laundry and dry-cleaning startup (backed by 500 Global
+  and Y Combinator) that has since rebranded and now operates as ByNext at bynext.co. ByNext is an
+  app-based, on-demand laundry, dry cleaning, and home cleaning pickup and delivery service operating
+  7 days a week (8am-8pm) with 24-48 hour turnaround across metro markets including New York City,
+  New Jersey, the Washington D.C. area, and Los Angeles. Booking is handled through its iOS and
+  Android apps with real-time driver tracking, pay-per-pound or subscription pricing, and free pickup
+  and delivery. Cleanly/ByNext exposes no public developer API surface; this profile captures the
+  company's public web and consumer-app footprint. The original cleanly.com domain now redirects to
+  bynext.co.
 url: https://raw.githubusercontent.com/api-evangelist/cleanly/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,11 +29,19 @@ x-backed-by:
 - y-combinator
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-rebranded-to: bynext
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
+- Laundry
+- Dry Cleaning
+- Home Cleaning
+- On-Demand
+- Delivery
+- Consumer App
+- Local Services
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +49,26 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/cleanly-domain-security.yml
 - type: Website
-  url: https://cleanly.com
+  url: https://bynext.co
+- type: Blog
+  url: https://bynext.co/blog/
+- type: Pricing
+  url: https://bynext.co/pricing/
+- type: Support
+  url: https://bynext.co/help/
+- type: SignUp
+  url: https://bynext.co/reserve/
+- type: TermsOfService
+  url: https://bynext.co/terms
+- type: PrivacyPolicy
+  url: https://bynext.co/privacy
+- type: LLMsTxt
+  url: llms/cleanly-llms.txt
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
